@@ -24,7 +24,7 @@ public class app {
         Pedido pr2 = new Pedido(cli2, "Calle Córdoba 2, Garrucha");
         pr2.agregarPlato(new Plato(14,"Smash burguer doble barbacoa", 15.50, ""));
         pr2.agregarPlato(new Plato(14,"Smash burguer doble barbacoa", 15.50, ""));
-        pr1.agregarPlato(new Plato(25,"Ración patatas fritas", 12.50, ""));
+        pr2.agregarPlato(new Plato(25,"Ración patatas fritas", 12.50, ""));
 
         gestPed.agregarPedido(pr1);
         gestPed.agregarPedido(pr2);
