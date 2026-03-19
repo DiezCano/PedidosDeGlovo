@@ -47,6 +47,10 @@ public class Pedido {
         return sb.toString();
     }
 
+    public void agregarPlato(Plato plato){
+        platos.add(plato);
+    }
+
 
 
 
