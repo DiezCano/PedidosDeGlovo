@@ -2,8 +2,8 @@ package servicies;
 
 import entities.Pedido;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.lang.invoke.CallSite;
+import java.util.*;
 
 public class GestorPedidos {
 
@@ -24,6 +24,13 @@ public class GestorPedidos {
         for(String codigo : pedidos.keySet()){
             IO.println(codigo + "\n" + pedidos.get(codigo).mostrarPedido());
         }
+    }
+
+    public void mostrarPedidosPorFecha() {
+        List<Pedido> pedidosFecha = new ArrayList<Pedido>(pedidos.values());
+        pedidosFecha.sort(Comparator.comparing(Pedido::getFecha));
+        IO.println("--- Pedidos ordenados por fecha");
+
     }
 
 
